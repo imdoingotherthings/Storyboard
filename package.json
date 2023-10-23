@@ -1,8 +1,29 @@
 {
-  "name": "Storyboard",
-  "version": "1.0.0",
-  "description": "An app to create story boards and keep track of tasks.",
-  "main": "index.js",
-  "author": "Asai Andrade",
-  "license": "MIT"
+	"name": "Storyboard",
+	"version": "1.0.0",
+	"description": "An app to create story boards and keep track of tasks.",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"author": "Asai Andrade",
+	"license": "MIT",
+	"scripts": {
+		"start": "node app/index.js",
+		"parcel": "parcel --no-cache src/index.html",
+		"build": "parcel build src/index.html"
+	},
+	"engines": {
+		"node": "^19",
+		"yarn": "^1.22",
+		"npm": "^9"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.16",
+		"parcel": "^2.10.0",
+		"postcss": "^8.4.31",
+		"process": "^0.11.10",
+		"tailwindcss": "^3.3.3"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
 }
