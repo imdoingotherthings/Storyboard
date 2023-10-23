@@ -1,0 +1,8 @@
+{
+  "name": "Storyboard",
+  "version": "1.0.0",
+  "description": "An app to create story boards and keep track of tasks.",
+  "main": "index.js",
+  "author": "Asai Andrade",
+  "license": "MIT"
+}
