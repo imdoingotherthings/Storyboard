@@ -5,10 +5,13 @@
 	"browserslist": "> 0.5%, last 2 versions, not dead",
 	"author": "Asai Andrade",
 	"license": "MIT",
+	"type": "module",
 	"scripts": {
 		"start": "node app/index.js",
 		"parcel": "parcel --no-cache src/index.html",
-		"build": "parcel build src/index.html"
+		"build": "parcel build src/index.html",
+		"dev": "nodemon app/index.js",
+		"preload": "node utils/preload.js"
 	},
 	"engines": {
 		"node": "^19",
@@ -17,12 +20,17 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.16",
+		"nodemon": "^3.0.1",
 		"parcel": "^2.10.0",
 		"postcss": "^8.4.31",
 		"process": "^0.11.10",
 		"tailwindcss": "^3.3.3"
 	},
 	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"pg": "^8.11.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	}
