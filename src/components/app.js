@@ -1,3 +1,10 @@
+// Import Components
+import { AddStory } from '../components/AddStory/index';
+
 export const App = () => {
-	return <h1>React Integrated</h1>;
+	return (
+		<div>
+			<AddStory />
+		</div>
+	);
 };
